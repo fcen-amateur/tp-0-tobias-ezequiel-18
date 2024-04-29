@@ -12,7 +12,7 @@ def plot():
 
     for c in ["Americas","Europe"]:
         # Me quedo con los datos del continente
-        datos_cont = datos_2007[datos_2007["continent"].isin(c)]
+        datos_cont = datos_2007[datos_2007["continent"].isin([c])]
         # Tomo el mayor y menor pbi registrado
         max_gdp = max(datos_cont["gdpPercap"])
         min_gdp = min(datos_cont["gdpPercap"])
